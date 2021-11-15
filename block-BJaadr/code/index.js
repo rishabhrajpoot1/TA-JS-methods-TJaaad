@@ -2,10 +2,17 @@
 
 function countAllPeople() {
   // your code goes here
+  let count = 0;
+  let totalCount = got.houses.reduce((a,b)=> {
+    count += b.people.length;
+    return count;
+  },0)
+  console.log(totalCount);
 }
 
 function peopleByHouses() {
   // your code goes here
+  
 }
 
 function everyone() {
